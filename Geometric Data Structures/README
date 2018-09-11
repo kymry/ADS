@@ -1,0 +1,60 @@
+This READEME explains how to use the included .cpp files.
+
+----- main.cpp -----
+This is the main file that will generate and perform queries on interval trees,
+segment trees, and binary indexed trees. Each tree is contained within a marked section and must
+be uncommented to use. By default, interval trees are uncommented.
+
+----- All other files -----
+The other files contain the data structure code. The file names are self explanatory. The
+bruteForce.cpp is used in testing and simply creates a standard vector.
+
+----- Interval Tree -----
+How to generate an interval tree and perform overlap and contain queries?
+
+Step 1)  Open the main.cpp file
+Step 2)  Set the 'treeSize' parameter. It is set to 20 by default. This will
+determine how many intervals are inserted into the tree. I recommend leaving
+it at 20 as the results of the query as sent to the standard output.
+Step 3)  Run the program. The program generates an interval tree,
+generates a random interval for queries, performs a segment overlap query, and
+performs a segment contain query. The results are sent to the standard output and are formatted
+as below. This says that the interval [1,2] is used as the query interval and
+shows which intervals in the interval tree either overlap or are contained within
+the query.
+
+Interval [1,2] overlaps with:
+[0,9] [1,7] [1,7] [1,10] [0,3] [1,5] [0,1]
+
+Interval [1,2] is contained in:
+[0,9] [1,7] [1,7] [1,10] [0,3] [1,5]
+
+
+----- Segment Tree -----
+How to generate a segment tree and perform a point query?
+
+Step 1)  Open the main.cpp file
+Step 2)  Set the 'treeSize' parameter. It is set to 20 by default. This will
+determine how many intervals are inserted into the tree. I recommend leaving
+it at 20 as the results of the query as sent to the standard output.
+Step 3)  Run the program. The program generates a segment tree,
+generates a random point for query, and performs a point query. The results are sent to the standard output and are formatted
+as below. This says that point 5 is used as the query point and
+overlaps with the shown intervals.
+
+Point 5 overlaps with:
+[0,9] [4,9] [1,8] [2,7] [2,7] [3,10] [0,8] [0,5] [5,10] [3,9] [1,5] [3,10] [3,9]
+
+
+----- Binary Indexed Tree (BIT) -----
+How to generate a binary indexed tree and perform a prefix sum query on the first 10 elements?
+
+There isn't a lot to show with a Binary Indexed Tree, so the code just creates a
+BIT with 100 random points, performs an update, and then performs a prefix sum query on
+the first 10 elements.
+
+Step 1) Simply run the program. All parameters are already set. The results are
+sent to the standard output and are formatted as below. This states that the sum of the first 10
+elements is 36.
+
+Sum total of elements [1,10]: 36
