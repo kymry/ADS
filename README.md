@@ -2,4 +2,4 @@
 
 Projects from my Advanced Data Structures course at UPC Barcelona
 
-Each folder contains a separate README
+Each folder(project) contains a separate README
