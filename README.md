@@ -1,2 +1,5 @@
 # ADS
-Advanced Datastructures course at UPC Barcelona
+
+Projects from my Advanced Data Structures course at UPC Barcelona
+
+Each folder contains a separate README
