@@ -1,4 +1,4 @@
-# ADS
+# ADS - Advanced Data Structures
 
 Projects from my Advanced Data Structures course at UPC Barcelona
 
